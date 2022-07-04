@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_10"
+        android:gravity="center"
+        android:text="回复"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rect_4_transparent_black"
+        android:gravity="top"
+        android:hint="写回复"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@color/xui_config_color_main_theme"
+        android:gravity="center"
+        android:text="发送"
+        android:textSize="16sp" />
+</LinearLayout>

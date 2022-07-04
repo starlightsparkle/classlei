@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <item name="colorPrimary">@color/xui_config_color_main_theme</item>
+        <item name="colorPrimaryDark">@color/xui_config_color_main_theme</item>
+        <item name="colorAccent">@color/xui_config_color_main_theme</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="OnClick">
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+</resources>

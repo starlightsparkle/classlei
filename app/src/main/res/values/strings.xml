@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">雷课堂签到系统</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="forgetPassword"><u>忘记密码</u></string>
+    <string name="main_f">我学的</string>
+    <string name="main_s">我教的</string>
+    <string name="main_t">已归档</string>
+    <string name="todo">TODO</string>
+    <string name="permission_camera">App扫码需要用到拍摄权限</string>
+    <string name="permission_external_storage">App需要用到读写权限</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="qr_code">二维码</string>
+    <string name="bar_code">条形码</string>
+    <dimen name="icon_60">60dp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifyTitle">权限申请</string>
+    <string name="notifyMsg">权限</string>
+    <string name="cancel">拒绝</string>
+    <string name="setting">设置</string>
+</resources>

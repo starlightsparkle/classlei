@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    >
+<LinearLayout
+    android:layout_width="320sp"
+    android:layout_height="80sp"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical"
+    android:layout_marginBottom="10sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_stu_name"
+        android:text="2021年12月20日21点12分的签到"
+        android:textSize="15sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15sp"
+            android:text="2021-12-20T21:03:09.442/"
+            android:textColor="@color/black"
+            android:id="@+id/sign_stu_create_time"
+            android:textSize="10sp"
+            android:layout_marginBottom="5sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15sp"
+            android:text="二维码签到"
+            android:id="@+id/sign_type"
+            android:textSize="13sp"
+            android:layout_marginBottom="5sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="80sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/status"
+            android:src="@mipmap/ing"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+            android:id="@+id/is_close"
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="进行中"
+            android:textColor="@color/green"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

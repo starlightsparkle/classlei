@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--容器，用来放控件的-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--轮播条控件-->
+    <com.xuexiang.xui.widget.banner.recycler.BannerLayout
+        android:id="@+id/main_bl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:bl_autoPlaying="true"
+        app:bl_centerScale="1.5"
+        app:bl_interval="1000"
+        app:bl_itemSpace="10dp"
+        app:bl_moveSpeed="1.8" />
+
+
+    <!--    </LinearLayout>-->
+    <!--控制栏控件,宽度同主页面-->
+    <FrameLayout
+        android:id="@+id/Thunder_main_contain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <!--导航栏-->
+    <LinearLayout
+        android:id="@+id/thunder_main_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+<!--        android:paddingTop="@dimen/dp_4">-->
+
+        <!--首页图标设置-->
+        <LinearLayout
+            android:id="@+id/thunder_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/thunder_home_ic"
+                android:layout_width="@dimen/ic_width"
+                android:layout_height="@dimen/ic_height"
+                app:srcCompat="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="课堂"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thunder_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/thunder_message_ic"
+                android:layout_width="@dimen/ic_width"
+                android:layout_height="@dimen/ic_height"
+                app:srcCompat="@drawable/icmessage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="消息"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/thunder_mine_ic"
+                android:layout_width="@dimen/ic_width"
+                android:layout_height="@dimen/ic_height"
+                app:srcCompat="@drawable/ic_me" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="我的"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

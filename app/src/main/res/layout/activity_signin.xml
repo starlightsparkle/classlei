@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp">
+
+        <ImageView
+            android:id="@+id/iv_signin_back_up"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/creat_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发起签到"
+            android:textSize="20sp"
+
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="签到方式"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:layout_weight="1"/>
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/radio_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_GPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="签到时长"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_time"
+            android:layout_weight="1"
+            android:background="@drawable/rect_5_white"
+            android:hint="请输入签到时间（分）" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn_send_signin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn_color_c"
+        android:layout_centerInParent="true"
+        android:text="发起签到"
+        android:textColor="@color/whiteSmoke"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </Button>
+</LinearLayout>

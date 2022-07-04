@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignDetailActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        >
+        <ImageView
+            android:id="@+id/btn_back_class"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="5sp"
+            />
+
+        <TextView
+            android:id="@+id/sign_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2021年12月20日21点12分的签到"
+            android:maxEms="15"
+            android:maxLines="1"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/signToQrCode"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:src="@mipmap/code" />
+        <ImageView
+            android:id="@+id/signToGPS"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:src="@mipmap/info" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/white" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="停止签到"
+            android:background="@color/red"
+            android:enabled="true"
+            android:id="@+id/stop_btn"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/slidingSignTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/white"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_indicator_height="4sp"
+        tl:tl_indicator_width="30sp"
+        tl:tl_textSelectColor="@color/avatar_overlay_true"
+        tl:tl_textUnselectColor="@color/darkGray"
+        tl:tl_indicator_color="@color/blueText"
+        tl:tl_textBold="SELECT"
+        tl:tl_textsize="20sp" />
+    </RelativeLayout>
+
+    <com.example.curriculumdesign.view.FixedViewPager
+        android:id="@+id/SignFixedViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>

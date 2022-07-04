@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp">
+
+        <ImageView
+            android:id="@+id/iv_back_up"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/creat_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创建课程"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="课程名称："
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"/>
+
+    <EditText
+        android:id="@+id/edt_courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_5_white"
+        android:hint="请输入课程名称"
+        android:padding="5dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="课程内容："
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_16"/>
+
+    <EditText
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/edt_course_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rect_5_white"
+        android:gravity="top"
+        android:hint="请输入课程内容" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn_create_course"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn_color_c"
+        android:layout_centerInParent="true"
+        android:text="创建课程"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

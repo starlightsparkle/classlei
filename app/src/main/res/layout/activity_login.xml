@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_10"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10sp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/edt_userID"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_size_12"
+            android:layout_toEndOf="@id/iv_phone"
+            android:background="@null"
+            android:hint="请输入账号"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_phone"
+        android:layout_alignStart="@id/rl_phone"
+        android:layout_alignEnd="@id/rl_phone"
+        android:layout_marginTop="5dp"
+        android:background="@color/darkGray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_line"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/edt_password_OK"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_size_12"
+            android:layout_toEndOf="@id/iv_password"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_is_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/ic_close_eye" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_password"
+        android:layout_alignStart="@id/rl_phone"
+        android:layout_alignEnd="@id/rl_phone"
+        android:layout_marginTop="5dp"
+        android:background="@color/darkGray" />
+
+
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_password"
+        android:layout_alignStart="@id/rl_password"
+        android:layout_marginTop="5dp"
+        android:checked="true"
+        android:text="记住密码" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_password"
+        android:layout_alignEnd="@id/rl_password"
+        android:layout_marginTop="15dp"
+        android:text="@string/forgetPassword"
+        android:textColor="#101010"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_forget"
+        android:layout_alignStart="@id/rl_password"
+        android:layout_alignEnd="@id/rl_password"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_color_c"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignStart="@id/rl_password"
+        android:layout_alignEnd="@id/rl_password"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_color_c"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_register"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_below="@id/tv_login"-->
+<!--        android:layout_alignStart="@id/rl_password"-->
+<!--        android:layout_alignEnd="@id/rl_phone"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="@color/xui_config_color_main_theme"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/register" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_below="@id/tv_forget"-->
+<!--        android:layout_alignStart="@id/rl_password"-->
+<!--        android:layout_alignEnd="@id/rl_password"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@color/xui_config_color_main_theme"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/login"-->
+<!--        android:textSize="16sp" />-->
+</RelativeLayout>

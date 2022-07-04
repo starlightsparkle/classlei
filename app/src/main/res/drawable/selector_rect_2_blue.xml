@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <!---点击状态-->
+        <shape>
+            <!---背景填充颜色-->
+            <solid android:color="@color/lightBlue" />
+            <!-- 设置边框宽度为1dp，边框颜色 -->
+            <stroke android:width="2dp" android:color="@color/lightBlue" />
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <!---非点击状态-->
+        <!---背景填充颜色-->
+        <shape>
+            <solid android:color="@color/gray" />
+            <!-- 设置边框宽度为1dp，边框颜色 -->
+            <stroke android:width="2dp" android:color="@color/gray" />
+            <!--&lt;!&ndash; 设置按钮圆角半径为20dp &ndash;&gt;-->
+        </shape>
+    </item>
+</selector>
